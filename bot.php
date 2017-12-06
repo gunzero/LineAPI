@@ -4,7 +4,7 @@ $Token_anto = 'N0GmjIPv6l1tJY7RovJW86yg393g3udc8w3CGtSw';
 $keys = 'NodeMCU';
 $Chanel = 'Status';
 $_Status = -1;
-//$access_token = 'iA00aKCsapdGJ2NY1g1W4XIqjaMCYUbVShtwKRb9psC';
+
 // Get POST body content
 $content = file_get_contents('php://input');
 $events = json_decode($content, true);
@@ -25,7 +25,7 @@ $event_Status = json_decode($contents, true);
 			return "เปิด";
 		}	
 	}
-	return "เออเรอ";		
+	return "error";		
 }
 
 		// Loop through each event	
